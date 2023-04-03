@@ -1,11 +1,18 @@
 nav {
-	background-color: #1b1b1b;
-	padding: 10px;
+	padding: 20px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1;
+	box-shadow: none;
+	background-color: #121212;
 }
+
+nav.shadow {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+  
 
 nav ul {
 	display: flex;
