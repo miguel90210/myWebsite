@@ -1,17 +1,18 @@
-html {
+html,
+body {
   height: 100%;
-  width: 100%;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  color: white; 
-  overflow-y: scroll;
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: #121212;  
-  margin-bottom: -50px;
+  background-color: #121212;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: scroll;
+  padding-top: 20px; 
+  color: white;
+
 }
 
 .main-content {
@@ -19,7 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%; /* Subtracting the height of the nav bar from the full viewport height */
+  min-height: 100vh;
 }
 
 h1 {
@@ -95,4 +96,19 @@ h1 {
   border-width: 8px;
   border-style: solid;
   border-color: transparent transparent #333 transparent;
+}
+
+.about,
+.portfolio {
+  height: 100vh; /* Set the height to be 100% of the viewport */
+  position: relative; /* Set the position to relative */
+  top: -100vh; /* Move the sections up by 100% of the viewport height */
+}
+
+.about {
+  background-color: #ccc; /* Set the background color for the about section */
+}
+
+.portfolio {
+  background-color: #ddd; /* Set the background color for the portfolio section */
 }
