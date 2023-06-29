@@ -1,6 +1,6 @@
-html,
-body {
-  height: 100%;
+html{
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 60px;
 }
 
 body {
@@ -12,12 +12,16 @@ body {
   overflow-y: scroll;
   padding-top: 20px; 
   color: white;
+}
 
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 
 .main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -32,7 +36,14 @@ h1 {
 h2 {
   font-size: 2.0rem;
   font-weight: normal;
-  margin: 0;;
+  margin: 0;
+}
+
+.about {
+  display: flex-column;
+  align-items: center;
+  text-align: center;
+  margin-right: 100px;
 }
 
 .profile-pic {
@@ -40,7 +51,15 @@ h2 {
   width: 140px;
   height: 140px;
   object-fit: cover;
-  margin: 40px;
+}
+
+.text-space p{
+  line-height: 0.5;
+}
+
+.text-space p {
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 .subtitle {
@@ -63,7 +82,8 @@ h2 {
 }
 
 .social-icons a:hover {
-  color: #0077b5; /* LinkedIn blue */
+  color: #0077b5;
+  cursor: pointer;
 }
 
 .fab {
@@ -102,19 +122,139 @@ h2 {
   border-width: 8px;
   border-style: solid;
   border-color: transparent transparent #333 transparent;
+} 
+
+nav {
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	box-shadow: none;
+	background-color: #121212;
 }
 
-.about,
-.portfolio {
-  height: 100vh; /* Set the height to be 100% of the viewport */
-  position: relative; /* Set the position to relative */
-  top: -100vh; /* Move the sections up by 100% of the viewport height */
+nav.shadow {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+  
+nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.about {
-  background-color: #ccc; /* Set the background color for the about section */
+nav li {
+	margin: 0 20px;
 }
 
-.portfolio {
-  background-color: #ddd; /* Set the background color for the portfolio section */
+nav a {
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color 0.3s;
+}
+
+nav a:hover {
+	color: #0077b5; /* LinkedIn blue */
+}
+
+#footer {
+  display: flex;
+  flex-direction: column; /* change the flex-direction to column */
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #333333;
+  font-size: 14px;
+}
+
+.contact-me p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 300px; /* increase the padding here to push the content down */
+  box-sizing: border-box;
+  background-color: #121212;
+}
+
+.source-link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  margin-left: 10px;
+}
+
+
+#footer {
+  display: flex;
+  flex-direction: column; /* change the flex-direction to column */
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #333333;
+  font-size: 14px;
+}
+
+
+.contact-me p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 300px; /* increase the padding here to push the content down */
+  box-sizing: border-box;
+  background-color: #121212;
+}
+
+.source-link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  margin-left: 10px;
 }

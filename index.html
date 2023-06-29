@@ -1,102 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <script src="js/script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/bbe60eba47.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portefolio">Portfolio</a></li>
-      </ul>
-    </nav>
-    <div class="main-content">
-      <div class="main">
-        <img
-          src="images/profile-pic.jpg"
-          alt="Profile Picture"
-          class="profile-pic"
-        />
-        <h1>Miguel Pato</h1>
-        <h2 class="subtitle">Computer Science Student</h2>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/miguel-pato" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/miguel90210" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a target="_blank" class="tooltip" data-tooltip=".miguel#0895"
-            ><i class="fab fa-discord"></i
-          ></a>
-          <a href="mailto:mpfpato@gmail.com"><i class="fas fa-envelope"></i></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/typing.css" />
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/bbe60eba47.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portefolio">Portfolio</a></li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <section class="main">
+      <div class="profile">
+        <div class="about">
+          <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic" />
+          <h1>Miguel Pato</h1>
+          <h2 class="subtitle">Computer Science Student</h2>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/miguel-pato" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/miguel90210" target="_blank"><i class="fab fa-github"></i></a>
+            <a target="_blank" class="tooltip" data-tooltip=".miguel#0895"><i class="fab fa-discord"></i></a>
+            <a href="mailto:mpfpato@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
       </div>
-      <div id="about" class="about-section">
-        <h2>About</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-          faucibus eros. Suspendisse blandit ipsum et lacinia consectetur.
-          Quisque iaculis urna sed erat dapibus, at egestas nisl vestibulum.
-          Integer luctus justo dolor, et pellentesque lorem elementum quis. Nam
-          eget nisi ex. Donec id lorem libero. Nulla a odio massa. Sed vel
-          gravida lectus.
-        </p>
+      <div class="text-space">
+        <h2>Hi there! 👋</h2>
+        <div class="typewriter">
+          <p class="type">My name is Miguel Pato, and I'm a graduate with a BSc in Computer Science.</p>
+          <p class="type">During my studies I've learned a lot about Coding, Software Development, Web Development, and much more.</p>
+          <p class="type">My main passion is Cybersecurity, and my main focus is to learn more about this emerging field.</p>
+          <p class="type">Below are some of the programming languages and technologies I've worked with so far.</p>
+        </div>
       </div>
-      <div id="Portfolio" class="contact-section">
-        <h2>Portefolio</h2>
+    </section>
+    <section>
+      <h2>Portfolio</h2>
+    </section>
+  </div>
+
+  <div class="push"></div>
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="copyright">
+        <p>© 2023 Miguel Pato</p>
+      </div>
+      <div class="source">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-          faucibus eros. Suspendisse blandit ipsum et lacinia consectetur.
-          Quisque iaculis urna sed erat dapibus, at egestas nisl vestibulum.
-          Integer luctus justo dolor, et pellentesque lorem elementum quis. Nam
-          eget nisi ex. Donec id lorem libero. Nulla a odio massa. Sed vel
-          gravida lectus. 
+          <a href="https://github.com/miguel90210/myWebsite" class="source-link" target="_blank">Source Code</a>
         </p>
       </div>
     </div>
+  </footer>
+</body>
 
-    <div class="push"></div>
-    <footer id="footer">
-      <div class="upperfooter">
-        <div class="contact-me">
-          <h4>Contact Me</h4>
-          <p>Email: mpfpato@gmail.com</p>
-          <p>Discord: .miguel#0895</p>
-          <p>Instagram: @mpfsp</p>
-        </div>
-        <div class="footer-links">
-          <h4>Website Routes</h4>
-          <a href="index.html">Home</a>
-          <a href="#about">About</a>
-          <a href="#portefolio">Portfolio</a>
-        </div>
-      </div>
-      <div class="footer-content">
-        <div class="copyright">
-          <p>© 2023 Miguel Pato</p>
-        </div>
-        <div class="source">
-          <p>
-            <a
-              href="https://github.com/miguel90210/myWebsite"
-              class="source-link"
-              target="_blank"
-              >Source Code</a
-            >
-          </p>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
