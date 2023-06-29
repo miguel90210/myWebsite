@@ -59,7 +59,6 @@ h2 {
 
 .text-space p {
   font-size: 1.1rem;
-  text-align: justify;
 }
 
 .subtitle {
@@ -210,7 +209,6 @@ nav a:hover {
   margin-left: 10px;
 }
 
-
 #footer {
   display: flex;
   flex-direction: column; /* change the flex-direction to column */
@@ -220,7 +218,6 @@ nav a:hover {
   background-color: #333333;
   font-size: 14px;
 }
-
 
 .contact-me p {
   margin: 0;
