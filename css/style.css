@@ -136,7 +136,7 @@ nav {
 	right: 0;
 	z-index: 1;
 	box-shadow: none;
-	background-color: #121212;
+	background-color: #1B1B1B;
 }
 
 nav.shadow {
@@ -156,7 +156,7 @@ nav li {
 }
 
 nav a {
-	color: #fff;
+	color: #FBFBF9;
 	font-size: 1.2em;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -165,6 +165,17 @@ nav a {
 
 nav a:hover {
 	color: #0077b5; /* LinkedIn blue */
+}
+
+.space {
+  height: 20px;
+}
+
+.portfolio{
+  color: #FBFBF9;
+  padding: 30px 10px 30px 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 #footer {
