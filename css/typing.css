@@ -9,7 +9,7 @@
 }
 
 .typewriter p {
-  border-right: 0.15em solid white;
+  border-right: 0.15em solid #FBFBF9;
   white-space: nowrap;
   overflow: hidden;
   margin: 0;
@@ -48,7 +48,7 @@
     width: 0;
   }
   99.9% {
-    border-right: 0.15em solid white;
+    border-right: 0.15em solid #FBFBF9;
   }
   100% {
     border: none;
@@ -63,7 +63,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 0.15em solid white;
+    border-right: 0.15em solid #FBFBF9;
   }
   100% {
     opacity: 1;
@@ -79,7 +79,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 0.15em solid white;
+    border-right: 0.15em solid #FBFBF9;
   }
   100% {
     opacity: 1;
